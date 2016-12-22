@@ -1,7 +1,13 @@
 language : node_js
 node_js : '0.10'
 before_script :
-  - cd ./resources/node/
+  - cd ./apiproxy/resources/node
   - npm install
+  - zip node_modules.zip -r node_modules
+  - rm -r node_modules
+  - cd ../../../
 script :
+  - mvn apigee-enterprise:deploy -P test -Dusername=praveen.opensource@gmail.com -Dpassword=Woolies@123
+  - cd ./apiproxy/resources/node
+  - npm install
   - npm test
