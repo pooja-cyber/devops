@@ -7,7 +7,7 @@ before_script :
   - rm -r node_modules
   - cd ../../../
 script :
-  - mvn apigee-enterprise:deploy -P test -Dusername=praveen.opensource@gmail.com -Dpassword=Woolies@123
+  - mvn apigee-enterprise:install -P test -Dusername=praveen.opensource@gmail.com -Dpassword=Woolies@123
   - cd ./apiproxy/resources/node
   - npm install
   - npm test
