@@ -18,7 +18,7 @@ var options = {
 describe("To validate API",function () {
    it("it should 200 OK http status code",function (done) {
        request(options,function (error,response,body) {
-           expect(response.statusCode).toBe(200);
+           expect(response.statusCode).toBe(201);
            done();
        });
    });
