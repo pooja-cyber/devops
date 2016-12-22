@@ -65,6 +65,13 @@
                             <goal>configure</goal>
                         </goals>
                     </execution>
+                    <execution>
+                        <id>deploy-bundle</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
                 </executions>
             </plugin>
             <plugin>
