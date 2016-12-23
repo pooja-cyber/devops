@@ -1,13 +1,18 @@
-language : node_js
-node_js : '0.10'
+language : node_js 
+node_js : '0.10' 
 before_script :
-  - cd ./apiproxy/resources/node
-  - npm install
-  - zip node_modules.zip -r node_modules
-  - rm -r node_modules
-  - cd ../../../
-script :
-  - mvn apigee-enterprise:install -P test -Dusername=praveen.opensource@gmail.com -Dpassword=Woolies@123
-  - cd ./apiproxy/resources/node
-  - npm install
+  - cd ./apiproxy/resources/node 
+  - npm install 
+  - zip node_modules.zip -r node_modules 
+  - rm -r node_modules 
+  - cd ../../../ 
+script :  
+  - mvn apigee-enterprise:deploy -P test -Dusername=praveen.opensource@gmail.com -Dpassword=Woolies@123 
+  - cd ./apiproxy/resources/node 
+  - npm install 
   - npm test
+after_failure :
+  - cd ../../../
+  - mvn apigee-enterprise:deploy  -P test -Dusername=praveen.opensource@gmail.com -Dpassword=Woolies@123 -Doptions=clean
+  - DEPLOY_REV=$(curl -sS -u praveen.opensource@gmail.com:Woolies@123 -X GET  https://api.enterprise.apigee.com/v1/organizations/praviii7/apis/devops | jq '.revision | length')
+  - curl -sS -u praveen.opensource@gmail.com:Woolies@123 -X POST  https://api.enterprise.apigee.com/v1/organizations/praviii7/environments/test/apis/devops/revisions/$DEPLOY_REV/deployments

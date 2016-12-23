@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><APIProxy name="devops" revision="2">
+    <Basepaths>/v1/devops</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1481792290950</CreatedAt>
+    <CreatedBy>praveen.opensource@gmail.com</CreatedBy>
+    <Description>This project implements auto deploy/undeploy node proxies in Apigee edge.</Description>
+    <DisplayName>devops</DisplayName>
+    <LastModifiedAt>1481792501301</LastModifiedAt>
+    <LastModifiedBy>praveen.opensource@gmail.com</LastModifiedBy>
+    <Policies/>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>node://README.md</Resource>
+        <Resource>node://node_modules.zip</Resource>
+        <Resource>node://package.json</Resource>
+        <Resource>node://router/routes.js</Resource>
+        <Resource>node://server.js</Resource>
+        <Resource>node://spec/happyPathSpec.js</Resource>
+        <Resource>node://spec/support/jasmine.json</Resource>
+    </Resources>
+    <Spec/>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>false</validate>
+</APIProxy>
