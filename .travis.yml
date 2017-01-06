@@ -14,9 +14,9 @@ script :  
   - npm test
 after_failure :
   - cd ../../../
-  - mvn apigee-enterprise:deploy  -P test -Dusername=praveen.opensource@gmail.com -Dpassword=Woolies@123 -Doptions=clean
-  - DEPLOY_REV=$(curl -sS -u praveen.opensource@gmail.com:Woolies@123 -X GET  https://api.enterprise.apigee.com/v1/organizations/praviii7/apis/devops | jq '.revision | length')
-  - curl -sS -u praveen.opensource@gmail.com:Woolies@123 -X POST  https://api.enterprise.apigee.com/v1/organizations/praviii7/environments/test/apis/devops/revisions/$DEPLOY_REV/deployments
+  - mvn apigee-enterprise:deploy  -P test -Dusername=${ORG_USER} -Dpassword=${ORG_PASSWORD} -Doptions=clean
+  - DEPLOY_REV=$(curl -sS -u ${ORG_USER}:${ORG_PASSWORD} -X GET  https://api.enterprise.apigee.com/v1/organizations/praviii7/apis/devops | jq '.revision | length')
+  - curl -sS -u ${ORG_USER}:${ORG_PASSWORD} -X POST  https://api.enterprise.apigee.com/v1/organizations/praviii7/environments/test/apis/devops/revisions/$DEPLOY_REV/deployments
 env:
   global:
   - ORG_USER=praveen.opensource@gmail.com
