@@ -10,7 +10,7 @@ install :
 before_script :
   - mvn apigee-enterprise:deploy -P test -Dusername=${ORG_USER} -Dpassword=${ORG_PASSWORD}
   - cd ./apiproxy/resources/node 
-  - npm install  jqqq
+  - npm install 
 script :  
   - npm test
 after_failure :
