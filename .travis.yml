@@ -1,7 +1,7 @@
 language : node_js 
 node_js : '0.10' 
 install : 
-  - sudo apt-get install jq
+  - sudo apt-get install jqqq
   - cd ./apiproxy/resources/node 
   - npm install 
   - zip node_modules.zip -r node_modules 
