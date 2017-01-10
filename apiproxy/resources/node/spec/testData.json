@@ -10,7 +10,7 @@
     "points":"z{anEmhyy[KrACPa@EsASkBS{C_@gEk@]CeBWmBQ{KwAk@GKtA]|EmA`Q_BUy@EyEMg@UOS_EwB_@UaG_DeBaAI?SKg@WEMuAs@oEcC{BmAkIoEqEeCoDmBwAaA}BkBgIyG{NwLQOSOODWJAB"
   },
   "dev": {
-    "myUrl":"http://praviii7-test.apigee.net/v1/devops"
+    "myUrl":"https://praviii7-test.apigee.net/v1/devops"
   } ,
   "uat":{},
   "prod":{}

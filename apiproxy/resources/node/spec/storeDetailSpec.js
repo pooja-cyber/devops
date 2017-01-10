@@ -39,6 +39,7 @@ describe("To validate Store locator by,",function () {
         it("it should fetch 200 OK http status code", function (done) {
             request(slByStoreDetailApi, function (error, response, body) {
                 jsonResponse = JSON.parse(body);
+                console.log(jsonResponse);
                 expect(response.statusCode).toBe(200);
                 done();
             });
