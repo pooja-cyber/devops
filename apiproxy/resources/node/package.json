@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test":"./node_modules/.bin/jasmine --forceexit"
+    "test": "./node_modules/.bin/jasmine --forceexit"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "express": "^4.14.0"
   },
   "devDependencies": {
+    "ajv": "^4.10.4",
     "jasmine": "^2.5.2",
     "request": "^2.79.0"
   }

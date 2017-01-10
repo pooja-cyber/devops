@@ -1,16 +1,17 @@
 language : node_js 
 node_js : '0.10' 
-before_script :
+install : 
   - sudo apt-get install jq
   - cd ./apiproxy/resources/node 
   - npm install 
   - zip node_modules.zip -r node_modules 
   - rm -r node_modules 
   - cd ../../../ 
-script :  
+before_script :
   - mvn apigee-enterprise:deploy -P test -Dusername=${ORG_USER} -Dpassword=${ORG_PASSWORD}
   - cd ./apiproxy/resources/node 
   - npm install 
+script :  
   - npm test
 after_failure :
   - cd ../../../
