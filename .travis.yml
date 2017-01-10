@@ -1,7 +1,7 @@
 language : node_js 
 node_js : '0.10' 
 install : 
-  - sudo apt-get install jqqq
+  - sudo apt-get install jq
   - cd ./apiproxy/resources/node 
   - npm install 
   - zip node_modules.zip -r node_modules 
@@ -21,4 +21,4 @@ after_failure :
 env:
   global:
   - ORG_USER=praveen.opensource@gmail.com
-  - ORG_PASSWORD=Woolies@123
+  - ORG_PASSWORD=Woolies@1234
