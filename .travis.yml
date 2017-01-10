@@ -8,7 +8,7 @@ install :
   - rm -r node_modules 
   - cd ../../../ 
 before_script :
-  - mvn apigee-enterprise:deploy -P test -Dusername=${ORG_USER} -Dpassword=${ORG_PASSWORD}
+  - mvn apigee-enterprise:deploy -P tests -Dusername=${ORG_USER} -Dpassword=${ORG_PASSWORD}
   - cd ./apiproxy/resources/node 
   - npm install 
 script :  
@@ -21,4 +21,4 @@ after_failure :
 env:
   global:
   - ORG_USER=praveen.opensource@gmail.com
-  - ORG_PASSWORD=Woolies@1234
+  - ORG_PASSWORD=Woolies@123
