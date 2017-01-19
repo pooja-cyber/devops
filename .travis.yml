@@ -9,16 +9,16 @@ install :
   - cd ../../../ 
 before_script :
   - DEPLOY_REV=$(curl -sS -u ${ORG_USER}:${ORG_PASSWORD} -X GET https://api.enterprise.apigee.com/v1/organizations/praviii7/environments/test/apis/devops/deployments | jq --raw-output .revision[0].name)
-  - mvn apigee-enterprise:deploy  -q -P test -Dusername=${ORG_USER} -Dpassword=${ORG_PASSWORD}
+  - mvn apigee-enterprise:deploy -P test -Dusername=${ORG_USER} -Dpassword=${ORG_PASSWORD}
   - cd ./apiproxy/resources/node 
   - npm install 
 script :  
   - npm test
 after_failure :
   - cd ../../../
-  - mvn apigee-enterprise:deploy  -q -P test -Dusername=${ORG_USER} -Dpassword=${ORG_PASSWORD} -Doptions=clean
+  - mvn apigee-enterprise:deploy -P test -Dusername=${ORG_USER} -Dpassword=${ORG_PASSWORD} -Doptions=clean
   - curl -sS -u ${ORG_USER}:${ORG_PASSWORD} -X POST https://api.enterprise.apigee.com/v1/organizations/praviii7/environments/test/apis/devops/revisions/$DEPLOY_REV/deployments
 env:
   global:
   - ORG_USER=praveen.opensource@gmail.com
-  - ORG_PASSWORD=Woolies@123
+  - ORG_PASSWORD=Woolies@123x`
