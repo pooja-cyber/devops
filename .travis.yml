@@ -6,6 +6,8 @@ install :
   - npm install 
   - zip node_modules.zip -r node_modules 
   - rm -r node_modules 
+  - zip spec.zip -r spec 
+  - rm -r spec 
   - cd ../../../ 
 before_script :
   - DEPLOY_REV=$(curl -sS -u ${ORG_USER}:${ORG_PASSWORD} -X GET https://api.enterprise.apigee.com/v1/organizations/praviii7/environments/test/apis/devops/deployments | jq --raw-output .revision[0].name)
