@@ -10,6 +10,7 @@ install :
 before_script :
   - DEPLOY_REV=$(curl -sS -u ${ORG_USER}:${ORG_PASSWORD} -X GET https://api.enterprise.apigee.com/v1/organizations/praviii7/environments/test/apis/devops/deployments | jq --raw-output .revision[0].name)
   - mvn apigee-enterprise:deploy -P test -Dusername=${ORG_USER} -Dpassword=${ORG_PASSWORD}
+  - curl -sS -u ${ORG_USER}:${ORG_PASSWORD} -X POST https://api.enterprise.apigee.com/v1/organizations/praviii7/environments/test/caches/stores_response_cache/entries?action=clear
   - cd ./apiproxy/resources/node 
   - npm install 
   - unzip spec.zip
