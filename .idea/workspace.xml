@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd4132c6-f7a8-486a-8a40-aa265e14167e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apiproxy/resources/node/spec/storeDetailSpec.js" afterPath="$PROJECT_DIR$/apiproxy/resources/node/spec/storeDetailSpec.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apiproxy/resources/node/spec/store-schema/storeLocatorByStoreDetailSchema.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apiproxy/resources/node/spec/storeDetailSpec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apiproxy/resources/node/spec/support/jasmine.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/apiproxy/resources/node/spec/testData.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ApigeeDevops.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,17 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="storeDetailSpec.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apiproxy/resources/node/spec/storeDetailSpec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apiproxy/resources/node/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -312,12 +306,12 @@
       <workItem from="1484540175081" duration="3878000" />
       <workItem from="1484691687416" duration="7147000" />
       <workItem from="1487029602177" duration="3212000" />
-      <workItem from="1487034180401" duration="3134000" />
+      <workItem from="1487034180401" duration="3582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63270000" />
+    <option name="totallyTimeSpent" value="63718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -570,10 +564,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apiproxy/resources/node/server.js">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state relative-caret-position="240">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -586,10 +580,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/apiproxy/resources/node/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="165">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding />
         </state>
       </provider>
