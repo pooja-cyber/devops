@@ -9,7 +9,7 @@ var request = require("request");
 var data = require('./testData.json');
 var Ajv = require('ajv');
 var ajv = Ajv({allErrors: true});
-jasmine.DEFAULT_TIMEOUT_INTERVAL = 15000;
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
 
 var jsonResponse;
 
@@ -39,7 +39,7 @@ describe("To validate Store locator by,",function () {
             request(slByStoreDetailApi, function (error, response, body) {
                 jsonResponse = JSON.parse(body);
                 console.log(jsonResponse);
-                expect(response.statusCode).toBe(201);
+                expect(response.statusCode).toBe(200);
                 done();
             });
         });
