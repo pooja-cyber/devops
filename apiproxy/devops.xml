@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<APIProxy revision="2" name="devops">
+<APIProxy revision="15" name="devops">
     <Basepaths>/v1/devops</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
-    <CreatedAt>1481792290950</CreatedAt>
+    <CreatedAt>1484018815936</CreatedAt>
     <CreatedBy>praveen.opensource@gmail.com</CreatedBy>
     <Description>This project implements auto deploy/undeploy node proxies in Apigee edge.</Description>
     <DisplayName>devops</DisplayName>
-    <LastModifiedAt>1481792501301</LastModifiedAt>
+    <LastModifiedAt>1484018815936</LastModifiedAt>
     <LastModifiedBy>praveen.opensource@gmail.com</LastModifiedBy>
     <Policies/>
     <ProxyEndpoints>
@@ -19,12 +19,14 @@
         <Resource>node://router/routes.js</Resource>
         <Resource>node://server.js</Resource>
         <Resource>node://spec/happyPathSpec.js</Resource>
+        <Resource>node://spec/store-schema/storeLocatorByStoreDetailSchema.json</Resource>
+        <Resource>node://spec/storeDetailSpec.js</Resource>
         <Resource>node://spec/support/jasmine.json</Resource>
+        <Resource>node://spec/testData.json</Resource>
     </Resources>
     <Spec></Spec>
     <TargetServers/>
     <TargetEndpoints>
         <TargetEndpoint>default</TargetEndpoint>
     </TargetEndpoints>
-    <validate>false</validate>
 </APIProxy>

@@ -26,8 +26,6 @@ var slByStoreDetailApi = {
 };
 
 
-
-
 var slByDetailSchema = require('./store-schema/storeLocatorByStoreDetailSchema.json');
 
 
@@ -37,9 +35,11 @@ describe("To validate Store locator by,",function () {
     describe("Store detail Api,",function () {
 
         it("it should fetch 200 OK http status code", function (done) {
+            console.log(slByStoreDetailApi)
             request(slByStoreDetailApi, function (error, response, body) {
                 jsonResponse = JSON.parse(body);
-                expect(response.statusCode).toBe(201);
+                console.log(jsonResponse);
+                expect(response.statusCode).toBe(200);
                 done();
             });
         });

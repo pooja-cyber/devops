@@ -7,7 +7,7 @@ var router = express.Router();
 
 router.get('/',function (req,res,next) {
     res.status(200).json({
-        "name": "Town Hall",
+        "name": "Town Hall Station",
         "addressLine1": "Cnr Park & George Street",
         "addressLine2": "",
         "country": "Australia",
