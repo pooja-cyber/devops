@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd4132c6-f7a8-486a-8a40-aa265e14167e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-    </list>
+    <list default="true" id="cd4132c6-f7a8-486a-8a40-aa265e14167e" name="Default" comment="" />
     <ignored path="ApigeeDevops.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -302,12 +300,12 @@
       <workItem from="1484540175081" duration="3878000" />
       <workItem from="1484691687416" duration="7147000" />
       <workItem from="1487029602177" duration="3212000" />
-      <workItem from="1487034180401" duration="7983000" />
+      <workItem from="1487034180401" duration="8031000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68119000" />
+    <option name="totallyTimeSpent" value="68167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
