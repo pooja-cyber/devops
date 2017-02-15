@@ -25,4 +25,4 @@ after_failure :
 env:
   global:
   - ORG_USER=praveen.opensource@gmail.com
-  - ORG_PASSWORD=Woolies@123  
+  - ORG_PASSWORD=Woolies@123
